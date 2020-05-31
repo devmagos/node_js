@@ -4,19 +4,26 @@
   "description": "A sample nodejs server set up tutorial",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand --detectOpenHandles --watch",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-validator": "^6.4.1",
+    "mongoose": "^5.9.13",
+    "sweetalert": "^2.1.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "nodemon": "^2.0.3"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   },
   "nodemonConfig": {
     "ignore": [
